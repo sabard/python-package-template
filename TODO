@@ -1,0 +1,62 @@
+Currently suppported:
+    Package Manager: pyenv, pip-tools
+    Formatting:
+    Testing:
+    Linting:
+    Typing:
+    Task runner:
+    CI/CD:
+    Editor integration:
+    Documentation:
+    Docker support
+
+Support list (order of priority):
+ - finish testing
+ - github actions
+ - formatting/linting (something like fourmat could be nice)
+ - poetry support?
+
+
+Example:
+    Package Manager: poetry
+    Formatting: Black and isort
+    Testing: pytest
+    Linting: flake8 and pre-commit
+    Typing: mypy
+    Task runner: taskipy
+    CI/CD: Github Actions
+        Automated versioning, changelog, and release via Conventional Commits
+        Automated dependency updates via Dependabot
+    Editor integration: VS Code
+    Documentation: MkDocs (optional)
+    Docker support (optional)
+
+Example templates:
+- https://github.com/pawamoy/copier-poetry/tree/master/project
+- https://github.com/branchvincent/python-template/
+- https://github.com/blakeNaccarato/copier-python
+
+Testing and Docker:
+- https://github.com/Tecnativa/image-template/blob/main/src/%7B%25%20if%20pytest%20%25%7Dtests%7B%25%20endif%20%25%7D/conftest.py.jinja
+
+Yajo example with self-application:
+- https://github.com/copier-org/autopretty
+
+Meh examples:
+- https://github.com/proinsias/copier-python-template/tree/main/copier-python-template
+- https://github.com/Cecron/copier-python
+
+More examples on github:
+- https://github.com/topics/copier-template
+
+
+Great cookiecutter example:
+- https://github.com/TezRomacH/python-package-template
+
+
+Support other licenses:
+- GPLv3, GPLv2
+
+Once repo is copied:
+    - Fix permissions on scripts (update-deps didn't have correct perms)
+    - should setup script in repo should switch venvs? or use .python-version?
