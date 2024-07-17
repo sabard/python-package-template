@@ -3,13 +3,13 @@ from setuptools import setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-with open('requirements.txt') as f:
-    install_requires = f.read().splitlines()
+with open('requirements.txt') as fh:
+    install_requires = fh.read().splitlines()
 
 setup(
     name='python_package_template',
     version='0.0.1',
-    license='MIT,',
+    license='AGPLv3',
     description='Template for creating and generic Python packages',
     long_description=long_description,
     long_description_content_type="text/markdown",

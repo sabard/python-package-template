@@ -3,6 +3,8 @@
 
 ## Initial Setup
 
+IF YOU WANT TO DEV:
+
 Dependencies:
 - [pyenv](https://github.com/pyenv/pyenv)
 - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
@@ -15,6 +17,10 @@ Once you have installed pyenv, install the rest of `python_package_template`'s d
 ./setup.sh
 ```
 
+BUT JUST USING COPIER TEMPLATE:
+
+`pipx install copier`
+
 ## Update Package Dependencies
 
 Add new dependencies to `requirements.in` and then run:
@@ -25,10 +31,21 @@ Add new dependencies to `requirements.in` and then run:
 
 ## Local Usage
 
+TODO add `pipx install copier` or provide another install method than running the setup script
+
 ### Create a new template
 
+`cd` into your project directory and run:
+
 ```bash
+pyenv activate python_package_template
 copier path/to/python_package_template path/to/your_project
+```
+
+-or-
+
+```bash
+copier gh:sabard/python_package_template .
 ```
 
 ### Update an existing template
