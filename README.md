@@ -46,7 +46,7 @@ copier copy path/to/python-package-template path/to/your_project --trust
 -or-
 
 ```bash
-copier gh:sabard/python-package-template .
+copier copy gh:sabard/python-package-template . --trust
 ```
 
 ### Update an existing template

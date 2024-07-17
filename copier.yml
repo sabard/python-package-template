@@ -4,8 +4,8 @@ _templates_suffix: .j2
 _envops:
   keep_trailing_newline: true
 
-_tasks:
-  - "curl https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore > .gitignore"
+# _tasks:
+#   - "curl https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore > .gitignore"
 
 package_name: python_project
 
