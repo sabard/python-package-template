@@ -1,9 +1,14 @@
-# python_package_template
-`python_package_template` is a [copier](https://github.com/copier-org/copier) template to create **and update** Python packages. Copier uses git to merge changes from the original template into your instance, so you can keep all of your Python packages up to date and consistent.
+# python-package-template
+`python-package-template` is a [copier](https://github.com/copier-org/copier) template to create **and update** Python packages. Copier uses git to merge changes from the original template into your instance, so you can keep all of your Python packages up to date and consistent.
 
 ## Initial Setup
 
-IF YOU WANT TO DEV:
+### Basic Usage
+
+`pipx install copier`
+
+
+### Developer
 
 Dependencies:
 - [pyenv](https://github.com/pyenv/pyenv)
@@ -11,15 +16,11 @@ Dependencies:
 
 Installation is made simple with [pyenv-installer](https://github.com/pyenv/pyenv-installer).
 
-Once you have installed pyenv, install the rest of `python_package_template`'s dependencies with the setup script:
+Once you have installed pyenv, install the rest of `python-package-template`'s dependencies with the setup script:
 
 ```bash
 ./setup.sh
 ```
-
-BUT JUST USING COPIER TEMPLATE:
-
-`pipx install copier`
 
 ## Update Package Dependencies
 
@@ -38,14 +39,14 @@ TODO add `pipx install copier` or provide another install method than running th
 `cd` into your project directory and run:
 
 ```bash
-pyenv activate python_package_template
-copier path/to/python_package_template path/to/your_project
+pyenv activate python-package-template
+copier path/to/python-package-template path/to/your_project
 ```
 
 -or-
 
 ```bash
-copier gh:sabard/python_package_template .
+copier gh:sabard/python-package-template .
 ```
 
 ### Update an existing template
@@ -54,7 +55,7 @@ After making changes to the template:
 
 ```bash
 cd path/to/your_project
-pyenv activate python_package_template
+pyenv activate python-package-template
 copier update
 pyenv deactivate
 ```
