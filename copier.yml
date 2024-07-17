@@ -1,4 +1,4 @@
-_subdirectory: "[[package_name]]"
+_subdirectory: "{{package_name}}"
 _templates_suffix: .j2
 
 _envops:
@@ -11,24 +11,23 @@ package_name: python_project
 
 author_email:
   type: str
-  default: "s@bardasgupta.com"
 
 author_first_name:
   type: str
-  default: Sabar
 
 author_last_name:
   type: str
-  default: Dasgupta
 
 author_full_name:
   type: str
-  default: "[[author_first_name]] [[author_last_name]]"
+  default: "{{author_first_name}} {{author_last_name}}"
 
-python_version: 3.8.12
+python_version:
+  type: str
+  default: 3.10.14
 
 python_requires:
   type: str
-  default: ">=3.7"
+  default: ">=3.8"
 
 pytest: True

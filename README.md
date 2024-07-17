@@ -40,7 +40,7 @@ TODO add `pipx install copier` or provide another install method than running th
 
 ```bash
 pyenv activate python-package-template
-copier path/to/python-package-template path/to/your_project
+copier copy path/to/python-package-template path/to/your_project --trust
 ```
 
 -or-

@@ -7,15 +7,15 @@ with open('requirements.in') as fh:
     install_requires = fh.read().splitlines()
 
 setup(
-    name='[[package_name]]',
+    name='{{package_name}}',
     version='0.0.1',
     license='MIT,',
     description='Template for creating and updating generic Python packages',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author='[[author_full_name]]',
-    author_email='[[author_email]]',
+    author='{{author_full_name}}',
+    author_email='{{author_email}}',
     install_requires=install_requires,
-    packages=['[[package_name]]'],
-    python_requires='[[python_requires]]'
+    packages=['{{package_name}}'],
+    python_requires='{{python_requires}}'
 )
