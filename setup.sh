@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PYTHON_VERSION=3.10.14
+PYTHON_VERSION=3.8.12
 VENV_NAME=python-package-template
 
 eval "$(pyenv init -)"
