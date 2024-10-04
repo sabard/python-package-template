@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 PYTHON_VERSION=3.8.12
 VENV_NAME=python-package-template

@@ -1,4 +1,4 @@
-# _subdirectory: "{{package_name}}"
+_subdirectory: template
 _templates_suffix: .j2
 
 _envops:
