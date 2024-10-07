@@ -5,8 +5,12 @@
 
 ### Basic Usage
 
-`pipx install copier`
-
+```bash
+pipx install copier
+copier copy https://github.com/sabard/python-package-template /path/to/project
+cd /path/to/project
+./setup.sh
+```
 
 ### Developer
 
@@ -30,6 +34,12 @@ Add new dependencies to `requirements.in` and then run:
 ./update-deps.sh
 ```
 
+Single dependencies can be updated with:
+
+```bash
+./update-deps.sh  --upgrade-package <package>
+```
+
 ## Local Usage
 
 TODO add `pipx install copier` or provide another install method than running the setup script
@@ -40,13 +50,13 @@ TODO add `pipx install copier` or provide another install method than running th
 
 ```bash
 pyenv activate python-package-template
-copier copy path/to/python-package-template path/to/your_project --trust
+copier copy path/to/python-package-template path/to/your_project
 ```
 
 -or-
 
 ```bash
-copier copy gh:sabard/python-package-template . --trust
+copier copy gh:sabard/python-package-template .
 ```
 
 ### Update an existing template
