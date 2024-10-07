@@ -58,5 +58,4 @@ pyenv virtualenv $PYTHON_VERSION $VENV_NAME
 
 pyenv activate $VENV_NAME
 
-pipx install copier
 pre-commit install
