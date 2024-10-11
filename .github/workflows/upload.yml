@@ -1,0 +1,23 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.14"
+      - run: python
+
+      - run: pip install --upgrade pip
+      - run: pip install virtualenv
+      - run: virtualenv venv
+      - run: source venv/bin/activate
+      - run: pip install setuptools
+      - run: pip install -r requirements.txt
+      - run: pip install .
+
+
