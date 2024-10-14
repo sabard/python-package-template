@@ -1,4 +1,5 @@
 name: PyPI Upload
+concurrency: dev
 run-name: Uploading version ... to PyPI
 on: [push]
 
@@ -9,6 +10,7 @@ env:
 jobs:
   pypi-upload:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,7 +24,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pip install .
       - run: python setup.py sdist
-      - run: ${{ github.ref }}
+      - run: echo ${{ github.ref }}
       - run: echo $TWINE_REPOSITORY
       - run: twine upload dist/*
         env:
