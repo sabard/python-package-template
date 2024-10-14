@@ -72,4 +72,10 @@ pyenv deactivate
 
 ## Publish Package
 
-TODO (consider moving into template)
+Run the upload script which tags and releases the package via a push-triggered CI workflow:
+
+```bash
+./upload.sh
+```
+
+Make sure `TWINE_REPOSITORY`, `TWINE_USERNAME`, and `TWINE_PASSWORD` environment variables are available in your CI environment.

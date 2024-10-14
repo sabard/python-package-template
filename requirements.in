@@ -3,3 +3,4 @@ jsonschema
 plumbum
 pre-commit
 pytest
+twine
