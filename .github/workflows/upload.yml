@@ -5,11 +5,6 @@ jobs:
   pypi-upload:
     runs-on: ubuntu-latest
     steps:
-      - name: pypi-upload
-        env:
-          TWINE_REPOSITORY: ${{ vars.TWINE_REPOSITORY }}
-          TWINE_USERNAME: ${{ vars.TWINE_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -26,6 +21,10 @@ jobs:
       - run: python setup.py sdist
       - run: echo $TWINE_REPOSITORY
       - run: twine upload dist/*
+        env:
+          TWINE_REPOSITORY: ${{ vars.TWINE_REPOSITORY }}
+          TWINE_USERNAME: ${{ vars.TWINE_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
 
 
 
