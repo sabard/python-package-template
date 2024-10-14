@@ -24,8 +24,6 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pip install .
       - run: python setup.py sdist
-      - run: echo ${{ github.ref }}
-      - run: echo $TWINE_REPOSITORY
       - run: twine upload --verbose dist/*
         env:
           TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
