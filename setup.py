@@ -7,7 +7,7 @@ with open('requirements.txt') as fh:
     install_requires = fh.read().splitlines()
 
 setup(
-    name='python-package-template',
+    name='py-pkg-tmpl',
     version='0.0.1-dev',
     license='AGPLv3',
     description='Template for creating and generic Python packages',
