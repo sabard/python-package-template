@@ -8,7 +8,7 @@ with open('requirements.txt') as fh:
 
 setup(
     name='python-package-template',
-    version='0.0.1',
+    version='0.0.1-dev',
     license='AGPLv3',
     description='Template for creating and generic Python packages',
     long_description=long_description,
