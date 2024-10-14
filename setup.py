@@ -8,7 +8,7 @@ with open('requirements.txt') as fh:
 
 setup(
     name='py-pkg-tmpl',
-    version='0.0.1-dev',
+    version='0.0.1-dev1',
     license='AGPLv3',
     description='Template for creating and generic Python packages',
     long_description=long_description,
